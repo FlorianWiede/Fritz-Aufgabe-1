@@ -18,8 +18,6 @@ void draw() {
       größeändern=true;
     }
     if (rad==maxcircleRad) {
-
-
       größeändern=false;
     }
     if (größeändern==true) {
@@ -27,5 +25,9 @@ void draw() {
     } else if (größeändern==false) {
       circle(mouseX, mouseY, rad--);
     }
+  }
+  
+  if(keyPressed){
+    background(0);
   }
 }
